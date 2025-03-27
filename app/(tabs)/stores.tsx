@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { Text } from 'react-native'
 import { FlashList } from '@shopify/flash-list'
 import database from '../../assets/database/stores.json'
 
