@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "FoodParkApp",
-    "slug": "foodparkapp",
+    "name": "resetExpo",
+    "slug": "resetExpo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -36,15 +36,6 @@
     ],
     "experiments": {
       "typedRoutes": true
-    },
-    "extra": {
-      "router": {
-        "origin": false
-      },
-      "eas": {
-        "projectId": "8e8a51ba-463f-47fc-b33f-3b19e6532a15"
-      }
-    },
-    "owner": "pedrodalsenter"
+    }
   }
 }
