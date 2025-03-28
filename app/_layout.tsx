@@ -6,9 +6,8 @@ import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { Stack } from 'expo-router';
-import Drawer from 'expo-router/drawer';
 
-// Prevent the splash screen from auto-hiding before asset loading is complete.
+// Previne a splash screen de sumir antes do carregamento
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
@@ -26,13 +25,14 @@ export default function RootLayout() {
   if (!loaded) {
     return null;
   }
-
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Drawer>
-        <Drawer.Screen name="index" options={{ drawerLabel: 'Home' }} />
-        <Drawer.Screen name="(stack)" options={{ drawerLabel: 'Páginas Internas' }} />
-      </Drawer>
+      <Stack>
+        <Stack.Screen
+          name="(drawer)"
+          options={{ headerShown: false }}
+        />
+      </Stack>
     </ThemeProvider>
-  )
+  );
 }
