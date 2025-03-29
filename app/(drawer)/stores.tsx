@@ -20,7 +20,7 @@ export default function Stores() {
             estimatedItemSize={6}
             >
           </FlashList>
-          <Button title="Ir para Teste" onPress={() => router.push("../(stack)/teste")} />
+          <Button title="Ir para Teste" onPress={() => router.push("/teste")} />
         </ScrollView>
     </SafeAreaView>
   )
