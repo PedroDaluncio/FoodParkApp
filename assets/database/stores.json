@@ -23,10 +23,5 @@
         "title": "Loja 5",
         "id": 5,
         "image": "../../assets/images/loja1.png"
-    },
-    {
-        "title": "Loja 6",
-        "id": 6,
-        "image": "..//assets/images/loja1.png"
     }
 ]

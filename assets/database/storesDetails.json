@@ -1,0 +1,87 @@
+{
+    "1" : {
+        "nome": "Loja 1",
+        "descricao": "Descrição da loja 1",
+        "telefone": "(11) 91234-5678",
+        "whatsapp": "https://wa.me/5511123456789",
+        "email": "contato@exemplo.com",
+        "appEntrega": "link ifood",
+        "banner": "../../../assets/images/adaptive-icon.png",
+        "fotos": [
+            "https://example.com/photo1.jpg",
+            "https://example.com/photo2.jpg"
+        ],
+        "socialMedia": {
+            "facebook": "https://www.facebook.com/lojaexemplo",
+            "instagram": "https://www.instagram.com/lojaexemplo"
+        }
+    },
+    "2" : {
+        "nome": "Loja 1",
+        "descricao": "Descrição da loja 1",
+        "telefone": "(11) 91234-5678",
+        "whatsapp": "https://wa.me/5511123456789",
+        "email": "contato@exemplo.com",
+        "appEntrega": "link ifood",
+        "banner": "../../../assets/images/adaptive-icon.png",
+        "fotos": [
+            "https://example.com/photo1.jpg",
+            "https://example.com/photo2.jpg"
+        ],
+        "socialMedia": {
+            "facebook": "https://www.facebook.com/lojaexemplo",
+            "instagram": "https://www.instagram.com/lojaexemplo"
+        }
+    },
+    "3" : {
+        "nome": "Loja 1",
+        "descricao": "Descrição da loja 1",
+        "telefone": "(11) 91234-5678",
+        "whatsapp": "https://wa.me/5511123456789",
+        "email": "contato@exemplo.com",
+        "appEntrega": "link ifood",
+        "banner": "../../../assets/images/adaptive-icon.png",
+        "fotos": [
+            "https://example.com/photo1.jpg",
+            "https://example.com/photo2.jpg"
+        ],
+        "socialMedia": {
+            "facebook": "https://www.facebook.com/lojaexemplo",
+            "instagram": "https://www.instagram.com/lojaexemplo"
+        }
+    },
+    "4" : {
+        "nome": "Loja 1",
+        "descricao": "Descrição da loja 1",
+        "telefone": "(11) 91234-5678",
+        "whatsapp": "https://wa.me/5511123456789",
+        "email": "contato@exemplo.com",
+        "appEntrega": "link ifood",
+        "banner": "../../../assets/images/adaptive-icon.png",
+        "fotos": [
+            "https://example.com/photo1.jpg",
+            "https://example.com/photo2.jpg"
+        ],
+        "socialMedia": {
+            "facebook": "https://www.facebook.com/lojaexemplo",
+            "instagram": "https://www.instagram.com/lojaexemplo"
+        }
+    },
+    "5" : {
+        "nome": "Loja 1",
+        "descricao": "Descrição da loja 1",
+        "telefone": "(11) 91234-5678",
+        "whatsapp": "https://wa.me/5511123456789",
+        "email": "contato@exemplo.com",
+        "appEntrega": "link ifood",
+        "banner": "../../../assets/images/adaptive-icon.png",
+        "fotos": [
+            "https://example.com/photo1.jpg",
+            "https://example.com/photo2.jpg"
+        ],
+        "socialMedia": {
+            "facebook": "https://www.facebook.com/lojaexemplo",
+            "instagram": "https://www.instagram.com/lojaexemplo"
+        }
+    }
+}
