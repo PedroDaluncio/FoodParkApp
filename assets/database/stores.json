@@ -1,20 +1,32 @@
 [
     {
-        "title": "Loja 1"
+        "title": "Loja 1",
+        "id": 1,
+        "image": "../../assets/images/loja1.png"
     },
     {
-        "title": "Loja 2"
+        "title": "Loja 2",
+        "id": 2,
+        "image": "loja1.png"
     },
     {
-        "title": "Loja 3"
+        "title": "Loja 3",
+        "id": 3,
+        "image": "../../assets/images/loja1.png"
     },
     {
-        "title": "Loja 4"
+        "title": "Loja 4",
+        "id": 4,
+        "image": "../../assets/images/loja1.png"
     },
     {
-        "title": "Loja 5"
+        "title": "Loja 5",
+        "id": 5,
+        "image": "../../assets/images/loja1.png"
     },
     {
-        "title": "Loja 6"
+        "title": "Loja 6",
+        "id": 6,
+        "image": "..//assets/images/loja1.png"
     }
 ]

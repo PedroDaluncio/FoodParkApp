@@ -1,27 +1,33 @@
-import { Button, Image, ScrollView, Text, View } from 'react-native'
-import { FlashList } from '@shopify/flash-list'
-import database from '../../assets/database/stores.json'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { router } from 'expo-router'
+import { ScrollView, Text, View, Image, FlatList } from 'react-native';
+import database from '../../assets/database/stores.json';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { Link } from 'expo-router';
 
 export default function Stores() {
+
   return (
     <SafeAreaView>
       <ScrollView>
         <Text>Lojas participantes: </Text>
-          <FlashList
-            data={database}
-            renderItem={({item}) =>
+        <FlatList
+          data={database}
+          renderItem={({ item }) => {
+
+            return (
               <View>
                 <Text>{item.title}</Text>
-                <Image></Image>
+                <Image source={require("../../assets/images/loja1.png")} style={{ width: 100, height: 100 }} />
+                <Link href={{
+                  pathname: "/store/[id]",
+                  params: { id: item.id }
+                }}> VISITENOS
+                </Link>
               </View>
-            }
-            estimatedItemSize={6}
-            >
-          </FlashList>
-          <Button title="Ir para Teste" onPress={() => router.push("/teste")} />
-        </ScrollView>
+            );
+          }}
+          keyExtractor={(item) => item.id.toString()}
+        />
+      </ScrollView>
     </SafeAreaView>
-  )
+  );
 }
