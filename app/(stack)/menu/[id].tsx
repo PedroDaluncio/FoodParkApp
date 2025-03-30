@@ -1,25 +1,30 @@
 import { Text, View, Image, FlatList, StyleSheet } from 'react-native';
-import database from '../../assets/database/stores.json';
+import database from '../../../assets/database/menu.json';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Link } from 'expo-router';
+import { Link, useLocalSearchParams } from 'expo-router';
 
-export default function Stores() {
+export default function Menu() {
+  const { id } = useLocalSearchParams();
+  const data = database.find((item) => item.storeId.toString() === id.toString());
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.header}>Lojas de alimentação: </Text>
+      <Text style={styles.header}>Nosso Cardápio: </Text>
       <FlatList
-        data={database}
+        data={data?.foodsAndDrinks}
         renderItem={({ item }) => {
           return (
             <View style={styles.item}>
-              <Image source={require("../../assets/images/loja1.png")} style={styles.image} />
+              <Image source={require("../../../assets/images/loja1.png")} style={styles.image} />
               <View style={styles.textContainer}>
-                <Text style={styles.storeName}>{item.title}</Text>
+                <View>
+                  <Text style={styles.foodName}>{item.name}</Text>
+                  <Text>Preço unidade: R${item.price}</Text>
+                </View>
                 <Link href={{
-                pathname: "/store/[id]",
+                pathname: "/items/[id]",
                 params: { id: item.id }
-              }} style={styles.link}> Visite a Nossa Loja!</Link>
+              }} style={styles.link}> Ver Alimento</Link>
               </View>
             </View>
           );
@@ -87,7 +92,7 @@ const styles = StyleSheet.create({
     color: '#fff',
     borderRadius: 5,
   },
-  storeName: {
+  foodName: {
     fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center',

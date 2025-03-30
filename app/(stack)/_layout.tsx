@@ -4,10 +4,12 @@ export default function StackLayout() {
   return (
     <Stack
       screenOptions={{
-        headerShown: false,  // Não mostrar header extra
+        headerShown: true,
       }}
     >
-      <Stack.Screen name="teste" options={{ title: 'Página de Teste' }} />
+      <Stack.Screen name="store/[id]" options={{ title: 'Boas Vindas a Nossa Loja!' }} />
+      <Stack.Screen name="menu/[id]" options={{ title: 'Cardápio' }} />
+      <Stack.Screen name="items/[id]" options={{ title: 'Alimentos/Bebidas' }} />
     </Stack>
   );
 }

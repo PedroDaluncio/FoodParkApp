@@ -1,0 +1,202 @@
+{
+    "1": {
+        "name": "Cerveja",
+        "description": "Bebida alcoólica fermentada",
+        "price": "5.00",
+        "ingredients": ["Malte", "Lúpulo", "Água", "Levedura"],
+        "quantity": "500ml",
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "2": {
+        "name": "Refrigerante",
+        "description": "Bebida gaseificada e adoçada",
+        "price": "3.50",
+        "ingredients": ["Água carbonatada", "Açúcar", "Aromatizantes"],
+        "quantity": "350ml",
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "3": {
+        "name": "Água",
+        "description": "Água mineral natural sem gás",
+        "price": "2.00",
+        "ingredients": ["Água mineral"],
+        "quantity": "500ml",
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "4": {
+        "name": "Batata frita",
+        "description": "Batatas fritas crocantes",
+        "price": "10.00",
+        "ingredients": ["Batata", "Óleo vegetal", "Sal"],
+        "quantity": "porção 400g",
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "5": {
+        "name": "Hamburguer",
+        "description": "Sanduíche de carne com acompanhamentos",
+        "price": "15.00",
+        "ingredients": ["Pão", "Carne", "Queijo", "Alface", "Tomate", "Molho especial"],
+        "quantity": "1 unidade",
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "6": {
+        "name": "Cerveja",
+        "description": "Bebida alcoólica fermentada",
+        "price": "5.00",
+        "ingredients": ["Malte", "Lúpulo", "Água", "Levedura"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "7": {
+        "name": "Refrigerante",
+        "description": "Bebida gaseificada e adoçada",
+        "price": "3.50",
+        "ingredients": ["Água carbonatada", "Açúcar", "Aromatizantes"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "8": {
+        "name": "Água",
+        "description": "Água mineral natural",
+        "price": "2.00",
+        "ingredients": ["Água mineral"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "9": {
+        "name": "Batata frita",
+        "description": "Batatas fritas crocantes",
+        "price": "10.00",
+        "ingredients": ["Batata", "Óleo vegetal", "Sal"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "10": {
+        "name": "Hamburguer",
+        "description": "Sanduíche de carne com acompanhamentos",
+        "price": "15.00",
+        "ingredients": ["Pão", "Carne", "Queijo", "Alface", "Tomate", "Molho especial"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "11": {
+        "name": "Cerveja",
+        "description": "Bebida alcoólica fermentada",
+        "price": "5.00",
+        "ingredients": ["Malte", "Lúpulo", "Água", "Levedura"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "12": {
+        "name": "Refrigerante",
+        "description": "Bebida gaseificada e adoçada",
+        "price": "3.50",
+        "ingredients": ["Água carbonatada", "Açúcar", "Aromatizantes"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "13": {
+        "name": "Água",
+        "description": "Água mineral natural",
+        "price": "2.00",
+        "ingredients": ["Água mineral"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "14": {
+        "name": "Batata frita",
+        "description": "Batatas fritas crocantes",
+        "price": "10.00",
+        "ingredients": ["Batata", "Óleo vegetal", "Sal"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "15": {
+        "name": "Hamburguer",
+        "description": "Sanduíche de carne com acompanhamentos",
+        "price": "15.00",
+        "ingredients": ["Pão", "Carne", "Queijo", "Alface", "Tomate", "Molho especial"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "16": {
+        "name": "Cerveja",
+        "description": "Bebida alcoólica fermentada",
+        "price": "5.00",
+        "ingredients": ["Malte", "Lúpulo", "Água", "Levedura"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "17": {
+        "name": "Refrigerante",
+        "description": "Bebida gaseificada e adoçada",
+        "price": "3.50",
+        "ingredients": ["Água carbonatada", "Açúcar", "Aromatizantes"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "18": {
+        "name": "Água",
+        "description": "Água mineral natural",
+        "price": "2.00",
+        "ingredients": ["Água mineral"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "19": {
+        "name": "Batata frita",
+        "description": "Batatas fritas crocantes",
+        "price": "10.00",
+        "ingredients": ["Batata", "Óleo vegetal", "Sal"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "20": {
+        "name": "Hamburguer",
+        "description": "Sanduíche de carne com acompanhamentos",
+        "price": "15.00",
+        "ingredients": ["Pão", "Carne", "Queijo", "Alface", "Tomate", "Molho especial"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "21": {
+        "name": "Cerveja",
+        "description": "Bebida alcoólica fermentada",
+        "price": "5.00",
+        "ingredients": ["Malte", "Lúpulo", "Água", "Levedura"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "22": {
+        "name": "Refrigerante",
+        "description": "Bebida gaseificada e adoçada",
+        "price": "3.50",
+        "ingredients": ["Água carbonatada", "Açúcar", "Aromatizantes"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "23": {
+        "name": "Água",
+        "description": "Água mineral natural",
+        "price": "2.00",
+        "ingredients": ["Água mineral"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "24": {
+        "name": "Batata frita",
+        "description": "Batatas fritas crocantes",
+        "price": "10.00",
+        "ingredients": ["Batata", "Óleo vegetal", "Sal"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    },
+    "25": {
+        "name": "Hamburguer",
+        "description": "Sanduíche de carne com acompanhamentos",
+        "price": "15.00",
+        "ingredients": ["Pão", "Carne", "Queijo", "Alface", "Tomate", "Molho especial"],
+        "quantity": 1,
+        "image": "../../../assets/images/adaptive-icon.png"
+    }
+}

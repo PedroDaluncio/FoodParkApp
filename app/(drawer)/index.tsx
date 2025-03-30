@@ -1,8 +1,7 @@
-import { Button, Image, ScrollView, Text, View } from 'react-native'
+import { Image, ScrollView, Text, View } from 'react-native'
 import { FlashList } from '@shopify/flash-list'
 import database from '../../assets/database/stores.json'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { router } from 'expo-router'
 
 export default function Stores() {
   return (
@@ -20,7 +19,6 @@ export default function Stores() {
             estimatedItemSize={6}
             >
           </FlashList>
-          <Button title="Ir para Teste" onPress={() => router.push("/teste")} />
         </ScrollView>
     </SafeAreaView>
   )
