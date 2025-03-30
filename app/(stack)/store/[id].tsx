@@ -1,5 +1,5 @@
 import { Link, useLocalSearchParams } from 'expo-router';
-import { Button, Image, Linking, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Button, Image, Linking, ScrollView, StyleSheet, Text, View } from 'react-native';
 import stores from '../../../assets/database/storesDetails.json'
 
 export default function Store() {
@@ -8,21 +8,19 @@ export default function Store() {
     Linking.openURL(url)
   }
 
-  const store = stores[id]
+  const store = stores[id.toString()]
 
   return (
     <ScrollView>
       <View style={styles.container}>
         <Image source={require("../../../assets/images/adaptive-icon.png")} style={styles.banner} />
-        <Text style={styles.header}>{store.nome}</Text>
-        <Text style={styles.description}> “ {store.descricao} ”</Text>
+        <Text style={styles.header}>{store.name}</Text>
+        <Text style={styles.description}> “ {store.description} ”</Text>
 
-        <TouchableOpacity style={styles.menu}>
-          <Link href={{pathname: './cardapio/[id]', params: {id: id}}}>Acesse nosso cardápio!</Link>
-        </TouchableOpacity>
+        <Link href={{pathname: '../menu/[id]', params: {id: id}}} style={styles.menu}>Acesse nosso cardápio!</Link>
 
         <View style={styles.images}>
-          {store.fotos.map((photo:string, index:number) => (
+          {store.photos.map((photo:string, index:number) => (
             <Image
               key={index}
               source={require("../../../assets/images/adaptive-icon.png")}
@@ -33,7 +31,7 @@ export default function Store() {
 
         <Text style={styles.contactInfo}>Nossas Informações de contato:</Text>
         <View>
-          <Text style={styles.cellphoneNumber}>Telefone: {store.telefone}</Text>
+          <Text style={styles.cellphoneNumber}>Telefone: {store.cellphoneNumber}</Text>
           <Text style={styles.email}>Email: {store.email}</Text>
         </View>
 
@@ -47,7 +45,7 @@ export default function Store() {
 
         <View style={styles.appButton}>
           <Button title="Converse conosco no Whatsapp" onPress={() => openLink(store.whatsapp)} />
-          <Button title="Abrir App de Entrega" onPress={() => openLink(store.appEntrega)} />
+          <Button title="Abrir App de Entrega" onPress={() => openLink(store.deliveryApp)} />
         </View>
       </View>
     </ScrollView>
@@ -55,93 +53,101 @@ export default function Store() {
 }
 
 const styles = StyleSheet.create({
-  description: {
-    fontSize: 16,
-    marginTop: 10,
-    textAlign: 'justify',
-    fontStyle: 'italic',
-    marginBottom: 20,
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    paddingVertical: 20,
+    paddingHorizontal: 15,
   },
   banner: {
     width: '100%',
     height: 200,
     resizeMode: 'cover',
-    marginBottom: 10
-  },
-  container: {
-    flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fff'
+    borderRadius: 10,
+    marginBottom: 15,
   },
   header: {
-    fontFamily: 'Amethysta_400Regular',
-    fontSize: 24,
+    fontSize: 26,
     fontWeight: 'bold',
+    textAlign: 'center',
     marginBottom: 10,
-    textAlign: 'center'
+    color: '#333',
+  },
+  description: {
+    fontSize: 16,
+    textAlign: 'justify',
+    fontStyle: 'italic',
+    marginBottom: 20,
+    paddingHorizontal: 10,
+    color: '#555',
+  },
+  menu: {
+    width: '80%',
+    paddingVertical: 12,
+    backgroundColor: '#FFA500',
+    borderRadius: 10,
+    textAlign: 'center',
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#fff',
+    marginBottom: 30,
   },
   images: {
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 30,
     width: '100%',
-    paddingHorizontal: 10,
-    gap: 15
+    alignItems: 'center',
+    gap: 15,
+    marginBottom: 30,
   },
   image: {
-    width: '98%',
+    width: '95%',
     height: 200,
     borderRadius: 10,
     resizeMode: 'cover',
-    boxShadow: '0 4px 8px 5px rgba(0, 0, 0, 0.2)'
+    // Ajuste de sombra para Android/iOS
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 5,
+    elevation: 6,
   },
   contactInfo: {
     fontSize: 20,
     fontWeight: 'bold',
-    marginVertical: 10,
     textAlign: 'center',
+    marginVertical: 15,
+    color: '#333',
   },
   cellphoneNumber: {
     fontSize: 16,
     textAlign: 'center',
-    fontStyle: 'italic'
+    fontStyle: 'italic',
+    color: '#666',
   },
   email: {
     fontSize: 16,
-    marginBottom: 20,
     textAlign: 'center',
-    fontStyle: 'italic'
+    fontStyle: 'italic',
+    color: '#666',
+    marginBottom: 20,
   },
   socialNetwork: {
     fontSize: 20,
     fontWeight: 'bold',
-    marginVertical: 10,
     textAlign: 'center',
+    marginVertical: 10,
+    color: '#333',
   },
   socialNetworkContainer: {
     flexDirection: 'row',
-    alignItems: 'center',
-    width: '100%',
-    paddingHorizontal: 10,
+    justifyContent: 'center',
     gap: 15,
-    marginBottom: 40
+    marginBottom: 40,
   },
   appButton: {
-    width: '80%',
-    paddingHorizontal: 10,
+    width: '90%',
     gap: 15,
-    marginBottom: 40
-  },
-  menu: {
-    width: '80%',
-    paddingHorizontal: 10,
     marginBottom: 40,
-    backgroundColor: '#DDDDDD',
-    borderRadius: 10,
-    alignItems: 'center',
-    paddingVertical: 10
-  }
-})
+  },
+});
+

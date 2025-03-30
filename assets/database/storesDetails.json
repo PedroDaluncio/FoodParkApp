@@ -1,13 +1,13 @@
 {
     "1" : {
-        "nome": "Loja 1",
-        "descricao": "Descrição da loja 1",
-        "telefone": "(11) 91234-5678",
+        "name": "Loja 1",
+        "description": "Descrição da loja 1",
+        "cellphoneNumber": "(11) 91234-5678",
         "whatsapp": "https://wa.me/5511123456789",
         "email": "contato@exemplo.com",
-        "appEntrega": "link ifood",
+        "deliveryApp": "link ifood",
         "banner": "../../../assets/images/adaptive-icon.png",
-        "fotos": [
+        "photos": [
             "https://example.com/photo1.jpg",
             "https://example.com/photo2.jpg"
         ],
@@ -17,14 +17,14 @@
         }
     },
     "2" : {
-        "nome": "Loja 1",
-        "descricao": "Descrição da loja 1",
-        "telefone": "(11) 91234-5678",
+        "name": "Loja 1",
+        "description": "Descrição da loja 1",
+        "cellphoneNumber": "(11) 91234-5678",
         "whatsapp": "https://wa.me/5511123456789",
         "email": "contato@exemplo.com",
-        "appEntrega": "link ifood",
+        "deliveryApp": "link ifood",
         "banner": "../../../assets/images/adaptive-icon.png",
-        "fotos": [
+        "photos": [
             "https://example.com/photo1.jpg",
             "https://example.com/photo2.jpg"
         ],
@@ -34,14 +34,14 @@
         }
     },
     "3" : {
-        "nome": "Loja 1",
-        "descricao": "Descrição da loja 1",
-        "telefone": "(11) 91234-5678",
+        "name": "Loja 1",
+        "description": "Descrição da loja 1",
+        "cellphoneNumber": "(11) 91234-5678",
         "whatsapp": "https://wa.me/5511123456789",
         "email": "contato@exemplo.com",
-        "appEntrega": "link ifood",
+        "deliveryApp": "link ifood",
         "banner": "../../../assets/images/adaptive-icon.png",
-        "fotos": [
+        "photos": [
             "https://example.com/photo1.jpg",
             "https://example.com/photo2.jpg"
         ],
@@ -51,14 +51,14 @@
         }
     },
     "4" : {
-        "nome": "Loja 1",
-        "descricao": "Descrição da loja 1",
-        "telefone": "(11) 91234-5678",
+        "name": "Loja 1",
+        "description": "Descrição da loja 1",
+        "cellphoneNumber": "(11) 91234-5678",
         "whatsapp": "https://wa.me/5511123456789",
         "email": "contato@exemplo.com",
-        "appEntrega": "link ifood",
+        "deliveryApp": "link ifood",
         "banner": "../../../assets/images/adaptive-icon.png",
-        "fotos": [
+        "photos": [
             "https://example.com/photo1.jpg",
             "https://example.com/photo2.jpg"
         ],
@@ -68,14 +68,14 @@
         }
     },
     "5" : {
-        "nome": "Loja 1",
-        "descricao": "Descrição da loja 1",
-        "telefone": "(11) 91234-5678",
+        "name": "Loja 1",
+        "description": "Descrição da loja 1",
+        "cellphoneNumber": "(11) 91234-5678",
         "whatsapp": "https://wa.me/5511123456789",
         "email": "contato@exemplo.com",
-        "appEntrega": "link ifood",
+        "deliveryApp": "link ifood",
         "banner": "../../../assets/images/adaptive-icon.png",
-        "fotos": [
+        "photos": [
             "https://example.com/photo1.jpg",
             "https://example.com/photo2.jpg"
         ],
