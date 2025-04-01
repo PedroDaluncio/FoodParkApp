@@ -1,18 +1,19 @@
-import { Text, View, Image, FlatList, StyleSheet } from 'react-native';
+import { Text, View, Image, FlatList, StyleSheet, useColorScheme } from 'react-native';
 import database from '../../assets/database/stores.json';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Link } from 'expo-router';
 
 export default function Stores() {
+  const theme = useColorScheme()
 
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.header}>Lojas de alimentação: </Text>
+    <SafeAreaView style={theme==="light" ?styles.container: styles.containerDark}>
+      <Text style={theme==="light"? styles.header: styles.headerDark}>Lojas de alimentação: </Text>
       <FlatList
         data={database}
         renderItem={({ item }) => {
           return (
-            <View style={styles.item}>
+            <View style={theme==="light"?styles.item: styles.itemDark}>
               <Image source={{uri: item.image}} style={styles.image} />
               <View style={styles.textContainer}>
                 <Text style={styles.storeName}>{item.title}</Text>
@@ -37,6 +38,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     backgroundColor: '#f5f5f5',
   },
+  containerDark: {
+    flex: 1,
+    marginTop: 20,
+    paddingHorizontal: 16,
+    backgroundColor: '#333',
+  },
   header: {
     fontSize: 26,
     fontWeight: 'bold',
@@ -44,9 +51,32 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333',
   },
+  headerDark: {
+    fontSize: 26,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    textAlign: 'center',
+    color: '#fff',
+  },
   item: {
     flexDirection: 'row',
     backgroundColor: '#fff',
+    padding: 20,
+    borderRadius: 12,
+    marginBottom: 12,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.15,
+    shadowRadius: 3.84,
+    elevation: 4,
+    gap: 20,
+  },
+  itemDark: {
+    flexDirection: 'row',
+    backgroundColor: '#444',
     padding: 20,
     borderRadius: 12,
     marginBottom: 12,

@@ -1,5 +1,5 @@
 import { useLocalSearchParams } from 'expo-router';
-import { Button, Image, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Button, Image, ScrollView, StyleSheet, Text, useColorScheme, View } from 'react-native';
 import foods from '../../../assets/database/foods.json';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useState } from 'react';
@@ -11,6 +11,7 @@ export default function Foods() {
 
   const { id } = useLocalSearchParams();
   const food = foods[id.toString()]
+  const theme = useColorScheme()
 
   const setData = async (data: object) => {
     try {
@@ -78,24 +79,24 @@ export default function Foods() {
   return (
     <ScrollView>
       <Image source={{uri: food.image}} style={styles.banner} />
-      <View style={styles.container}>
-        <Text style={styles.header}>{food.name}</Text>
-        <Text style={styles.description}> “ {food.description} ”</Text>
+      <View style={theme==="light"?styles.container:styles.containerDark}>
+        <Text style={theme==="light"?styles.header:styles.headerDark}>{food.name}</Text>
+        <Text style={theme==="light"?styles.description:styles.descriptionDark}> “ {food.description} ”</Text>
         <Text style={styles.priceQuantity}>Preço: R${food.price}</Text>
         <Text style={styles.priceQuantity}>Quantidade: {food.quantity}</Text>
 
-        <View style={styles.ingredientsContainer}>
+        <View style={theme==="light"?styles.ingredientsContainer: styles.ingredientsContainerDark}>
           <Text style={styles.ingredientsList}>Ingredientes:</Text>
           {food.ingredients.map((ingredients:string, index:number) => {
             return(
-              <Text style={styles.ingredients} key={index}>
+              <Text style={theme==="light"?styles.ingredients:styles.ingredientsDark} key={index}>
                 • {ingredients}
               </Text>
             )
           })}
         </View>
-        <View style={styles.basket}>
-          <Text style={styles.basketTitle}>
+        <View style={theme==="light"?styles.basket:styles.basketDark}>
+          <Text style={theme==="light"?styles.basketTitle:styles.basketTitleDark}>
             Adicione o produto à sua cesta de compras!
           </Text>
           <View style={styles.shoppingBasket}>
@@ -135,6 +136,15 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     paddingHorizontal: 20,
   },
+  descriptionDark: {
+    fontSize: 16,
+    marginTop: 10,
+    textAlign: 'center',
+    fontStyle: 'italic',
+    color: '#ddd',
+    marginBottom: 20,
+    paddingHorizontal: 20,
+  },
   banner: {
     width: '100%',
     height: 250,
@@ -150,12 +160,27 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     paddingHorizontal: 15,
   },
+  containerDark: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'center',
+    backgroundColor: '#333',
+    paddingVertical: 20,
+    paddingHorizontal: 15,
+  },
   header: {
     fontSize: 26,
     fontWeight: 'bold',
     marginBottom: 10,
     textAlign: 'center',
     color: '#333',
+  },
+  headerDark: {
+    fontSize: 26,
+    fontWeight: 'bold',
+    marginBottom: 10,
+    textAlign: 'center',
+    color: '#fff',
   },
   priceQuantity: {
     fontSize: 18,
@@ -170,6 +195,13 @@ const styles = StyleSheet.create({
     textAlign: 'justify',
     fontStyle: 'italic',
     color: '#444',
+  },
+  ingredientsDark: {
+    fontSize: 16,
+    marginVertical: 5,
+    textAlign: 'justify',
+    fontStyle: 'italic',
+    color: '#ddd',
   },
   ingredientsList: {
     fontSize: 20,
@@ -192,6 +224,22 @@ const styles = StyleSheet.create({
     elevation: 4,
     borderWidth: 1,
     borderColor: '#ddd',
+  },
+  ingredientsContainerDark: {
+    padding: 15,
+    marginVertical: 15,
+    backgroundColor: '#444',
+    borderRadius: 12,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.15,
+    shadowRadius: 3.84,
+    elevation: 4,
+    borderWidth: 1,
+    borderColor: '#555',
   },
   shoppingBasket: {
     flex: 1,
@@ -219,6 +267,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center'
   },
+  basketTitleDark: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: '#fff',
+  },
   basket: {
     padding: 15,
     marginVertical: 15,
@@ -234,6 +288,22 @@ const styles = StyleSheet.create({
     elevation: 4,
     borderWidth: 1,
     borderColor: '#ddd',
+  },
+  basketDark: {
+    padding: 15,
+    marginVertical: 15,
+    backgroundColor: '#444',
+    borderRadius: 12,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.15,
+    shadowRadius: 3.84,
+    elevation: 4,
+    borderWidth: 1,
+    borderColor: '#555',
   },
   errorMessage: {
     color: 'red',
