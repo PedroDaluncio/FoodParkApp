@@ -1,87 +1,87 @@
 {
     "1" : {
-        "name": "Loja 1",
-        "description": "Descrição da loja 1",
-        "cellphoneNumber": "(11) 91234-5678",
-        "whatsapp": "https://wa.me/5511123456789",
-        "email": "contato@exemplo.com",
-        "deliveryApp": "link ifood",
-        "banner": "../../../assets/images/adaptive-icon.png",
+        "name": "Muchachos",
+        "description": "Restaurante Mexicano inspirado no Sul da califórnia, servindo burritos aos seus clientes",
+        "cellphoneNumber": "(48) 3371-0537",
+        "whatsapp": "https://wa.me/4833710537",
+        "email": "moochacho@hotmail.com",
+        "deliveryApp": "https://www.ifood.com.br/delivery/florianopolis-sc/moochacho---trindade-trindade/522b8c93-d56e-4fd5-a626-72f926c15caf",
+        "banner": "https://img.restaurantguru.com/rf9c-exterior-Muchachos-Cozinha-Mexicana.jpg",
         "photos": [
-            "https://example.com/photo1.jpg",
-            "https://example.com/photo2.jpg"
+            "https://static.wixstatic.com/media/f5317c_0c1b127b8ac0482f910d87a62e6fd369~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85,enc_auto/truck.jpg",
+            "https://static.wixstatic.com/media/f5317c_a78a297be9da43cf9331c2d1d6e45e8f~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85,enc_auto/trindade.jpg"
         ],
         "socialMedia": {
-            "facebook": "https://www.facebook.com/lojaexemplo",
-            "instagram": "https://www.instagram.com/lojaexemplo"
+            "facebook": "https://web.facebook.com/moochachoburritos",
+            "instagram": "https://www.instagram.com/moochachoburritos"
         }
     },
     "2" : {
-        "name": "Loja 1",
-        "description": "Descrição da loja 1",
-        "cellphoneNumber": "(11) 91234-5678",
-        "whatsapp": "https://wa.me/5511123456789",
-        "email": "contato@exemplo.com",
-        "deliveryApp": "link ifood",
-        "banner": "../../../assets/images/adaptive-icon.png",
+        "name": "Madero",
+        "description": "O melhor hamburguer da gastronomia gourmet",
+        "cellphoneNumber": "(48) 3112-0766",
+        "whatsapp": "https://wa.me/4831120766",
+        "email": "madero@hotmail.com",
+        "deliveryApp": "https://www.ifood.com.br/delivery/sao-paulo-sp/madero---shopping-cidade-sao-paulo-bela-vista/0af6be9e-da14-4965-a4ef-5958ad9cd676",
+        "banner": "https://master.restaurantemadero.com.br/upload/galeria-foto/60/1600x900pxfotos-1600x900.jpg",
         "photos": [
-            "https://example.com/photo1.jpg",
-            "https://example.com/photo2.jpg"
+            "https://master.restaurantemadero.com.br/upload/galeria-foto/76/1600x900pxsteakhouse-shopping-analia-franco-1600x900-03.jpg",
+            "https://master.restaurantemadero.com.br/upload/galeria-foto/65/1600x900pxsteakhouse-beiramar-shopping-1600x900-02.jpg"
         ],
         "socialMedia": {
-            "facebook": "https://www.facebook.com/lojaexemplo",
-            "instagram": "https://www.instagram.com/lojaexemplo"
+            "facebook": "https://web.facebook.com/maderobrasil/?locale=pt_BR&_rdc=1&_rdr",
+            "instagram": "https://www.instagram.com/maderobrasil/"
         }
     },
     "3" : {
-        "name": "Loja 1",
-        "description": "Descrição da loja 1",
-        "cellphoneNumber": "(11) 91234-5678",
-        "whatsapp": "https://wa.me/5511123456789",
-        "email": "contato@exemplo.com",
-        "deliveryApp": "link ifood",
-        "banner": "../../../assets/images/adaptive-icon.png",
+        "name": "Outback",
+        "description": "O melhor da culinária australiana",
+        "cellphoneNumber": "(48) 3039-0935",
+        "whatsapp": "https://wa.me/4830390935",
+        "email": "outback@hotmail.com",
+        "deliveryApp": "https://www.ifood.com.br/delivery/sao-paulo-sp/outback-steakhouse---cidade-sao-paulo-bela-vista/49c13948-f7fc-461a-b00a-9453989f9d66",
+        "banner": "https://cdn.outback.com.br/wp-data/wp-content/uploads/2025/02/restaurante_generica.jpg",
         "photos": [
-            "https://example.com/photo1.jpg",
-            "https://example.com/photo2.jpg"
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOXU-v35uzP8kGavw4BbuTrXi5F1Dpsl9W8g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzta93TjO7QZn3SlsSfStfgqjSwuLnX1BhZw&s"
         ],
         "socialMedia": {
-            "facebook": "https://www.facebook.com/lojaexemplo",
-            "instagram": "https://www.instagram.com/lojaexemplo"
+            "facebook": "https://web.facebook.com/outbackbrasil/?locale=pt_BR&_rdc=1&_rdr",
+            "instagram": "https://www.instagram.com/outbackbrasil/"
         }
     },
     "4" : {
-        "name": "Loja 1",
-        "description": "Descrição da loja 1",
-        "cellphoneNumber": "(11) 91234-5678",
-        "whatsapp": "https://wa.me/5511123456789",
-        "email": "contato@exemplo.com",
-        "deliveryApp": "link ifood",
-        "banner": "../../../assets/images/adaptive-icon.png",
+        "name": "HotDog du Piru",
+        "description": "O melhor do HotDog de Floripa e região!",
+        "cellphoneNumber": "(48) 99946-1434",
+        "whatsapp": "https://wa.me/48999461434",
+        "email": "dupiru@hotmail.com",
+        "deliveryApp": "https://www.ifood.com.br/delivery/florianopolis-sc/hot-dog-du-piru---trindade-trindade/1ab18497-839b-49b9-83a2-a1fd3fd17128?srsltid=AfmBOoohxgN0A2ED7C__QR4Jt1K88PNGU8u4Bn7bm6TifABqa67G_w2w",
+        "banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR24zari8r_2PuCRClWaBXBtVzHzIU5BrIlcA&s",
         "photos": [
-            "https://example.com/photo1.jpg",
-            "https://example.com/photo2.jpg"
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGApnazi_q8pwKwM083UFA2jqMG0ujwyzjQQ&s",
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaI9NEXYM9cORsO40JS2J_Hw9jCl7Gqzg1LW-KqFtU0aw45-6_SDK9AhzziGgG5nNnyBOYejslhnVlfQAwBpYdWtftd1k0ZaGTub33M3Jzmha7uxop_LpkdiOecj2gQ3hTFXk5wV8qRlk/s1600/Hot-Dog-do-Piru.JPG"
         ],
         "socialMedia": {
-            "facebook": "https://www.facebook.com/lojaexemplo",
-            "instagram": "https://www.instagram.com/lojaexemplo"
+            "facebook": "https://pt-br.facebook.com/hotdogdupiru/",
+            "instagram": "https://www.instagram.com/hotdogdupiruoficial/"
         }
     },
     "5" : {
-        "name": "Loja 1",
-        "description": "Descrição da loja 1",
-        "cellphoneNumber": "(11) 91234-5678",
-        "whatsapp": "https://wa.me/5511123456789",
-        "email": "contato@exemplo.com",
-        "deliveryApp": "link ifood",
-        "banner": "../../../assets/images/adaptive-icon.png",
+        "name": "Shawarmeria Arabian Food",
+        "description": "O melhor da gastronomia Árabe!",
+        "cellphoneNumber": "(48) 91234-5678",
+        "whatsapp": "https://wa.me/48123456789",
+        "email": "arabefood@hotmail.com",
+        "deliveryApp": "https://www.ifood.com.br/delivery/florianopolis-sc/shawarmeria---culinaria-arabe-trindade/08df7ee5-cbf5-4e89-9210-f3eb23bc9135?srsltid=AfmBOopovx4MMEst_VYeVHtMsylDTNpXKaod7HDHlJtHvNWyRYNRbIFd",
+        "banner": "https://media-cdn.tripadvisor.com/media/photo-s/0f/a3/60/3a/shawarmeria-arabian-food.jpg",
         "photos": [
-            "https://example.com/photo1.jpg",
-            "https://example.com/photo2.jpg"
+            "https://www.rbsdirect.com.br/imagesrc/25718161.jpg?w=700",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0e/85/ea/20/shawarmeria.jpg"
         ],
         "socialMedia": {
-            "facebook": "https://www.facebook.com/lojaexemplo",
-            "instagram": "https://www.instagram.com/lojaexemplo"
+            "facebook": "https://www.facebook.com/shawatmeriaArabian",
+            "instagram": "https://www.instagram.com/shawarmeriaArabian"
         }
     }
 }

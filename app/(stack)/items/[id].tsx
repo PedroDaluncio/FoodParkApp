@@ -77,11 +77,12 @@ export default function Foods() {
 
   return (
     <ScrollView>
-      <Image source={require("../../../assets/images/adaptive-icon.png")} style={styles.banner} />
+      <Image source={{uri: food.image}} style={styles.banner} />
       <View style={styles.container}>
         <Text style={styles.header}>{food.name}</Text>
         <Text style={styles.description}> “ {food.description} ”</Text>
-        <Text style={styles.priceQuantity}>Preço: R${food.price}/{food.quantity}</Text>
+        <Text style={styles.priceQuantity}>Preço: R${food.price}</Text>
+        <Text style={styles.priceQuantity}>Quantidade: {food.quantity}</Text>
 
         <View style={styles.ingredientsContainer}>
           <Text style={styles.ingredientsList}>Ingredientes:</Text>
@@ -159,7 +160,7 @@ const styles = StyleSheet.create({
   priceQuantity: {
     fontSize: 18,
     fontWeight: 'bold',
-    marginVertical: 10,
+    marginVertical: 8,
     textAlign: 'center',
     color: '#e63946',
   },

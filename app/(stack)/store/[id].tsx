@@ -13,7 +13,7 @@ export default function Store() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Image source={require("../../../assets/images/adaptive-icon.png")} style={styles.banner} />
+        <Image source={{uri: store.banner}} style={styles.banner} />
         <Text style={styles.header}>{store.name}</Text>
         <Text style={styles.description}> “ {store.description} ”</Text>
 
@@ -23,7 +23,7 @@ export default function Store() {
           {store.photos.map((photo:string, index:number) => (
             <Image
               key={index}
-              source={require("../../../assets/images/adaptive-icon.png")}
+              source={{uri: photo}}
               style={styles.image}
             />
           ))}

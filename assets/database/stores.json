@@ -1,27 +1,27 @@
 [
     {
-        "title": "Loja 1",
+        "title": "Muchachos",
         "id": 1,
-        "image": "../../assets/images/loja1.png"
+        "image": "https://img.restaurantguru.com/rf9c-exterior-Muchachos-Cozinha-Mexicana.jpg"
     },
     {
-        "title": "Loja 2",
+        "title": "Madero",
         "id": 2,
-        "image": "loja1.png"
+        "image": "https://master.restaurantemadero.com.br/upload/galeria-foto/60/1600x900pxfotos-1600x900.jpg"
     },
     {
-        "title": "Loja 3",
+        "title": "Outback",
         "id": 3,
-        "image": "../../assets/images/loja1.png"
+        "image": "https://cdn.outback.com.br/wp-data/wp-content/uploads/2025/02/restaurante_generica.jpg"
     },
     {
-        "title": "Loja 4",
+        "title": "HotDog du Piru",
         "id": 4,
-        "image": "../../assets/images/loja1.png"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR24zari8r_2PuCRClWaBXBtVzHzIU5BrIlcA&s"
     },
     {
-        "title": "Loja 5",
+        "title": "Shawarmeria Arabian Food",
         "id": 5,
-        "image": "../../assets/images/loja1.png"
+        "image": "https://media-cdn.tripadvisor.com/media/photo-s/0f/a3/60/3a/shawarmeria-arabian-food.jpg"
     }
 ]

@@ -1,202 +1,162 @@
 {
     "1": {
-        "name": "Cerveja",
-        "description": "Bebida alcoólica fermentada",
-        "price": "5.00",
-        "ingredients": ["Malte", "Lúpulo", "Água", "Levedura"],
-        "quantity": "500ml",
-        "image": "../../../assets/images/adaptive-icon.png"
+        "name": "Burrito Pollo Bandito",
+        "description": "Delicioso burrito recheado com frango temperado, feijão preto, arroz, queijo derretido e molho especial.",
+        "price": "40.00",
+        "quantity": "1 unidade/400g",
+        "ingredients": ["Frango", "Feijão preto", "Arroz", "Queijo", "Molho especial", "Tortilla"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/522b8c93-d56e-4fd5-a626-72f926c15caf/202310291905_8UXT_i.jpg"
     },
     "2": {
-        "name": "Refrigerante",
-        "description": "Bebida gaseificada e adoçada",
-        "price": "3.50",
-        "ingredients": ["Água carbonatada", "Açúcar", "Aromatizantes"],
-        "quantity": "350ml",
-        "image": "../../../assets/images/adaptive-icon.png"
+        "name": "Churros",
+        "description": "Churros crocantes por fora e macios por dentro, recheados com doce de leite e polvilhados com açúcar e canela.",
+        "price": "18.90",
+        "quantity": "5 unidades/30g cada unidade",
+        "ingredients": ["Massa de churros", "Açúcar", "Canela", "Doce de leite"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/522b8c93-d56e-4fd5-a626-72f926c15caf/202007161152_ALcm_d.jpg"
     },
     "3": {
-        "name": "Água",
-        "description": "Água mineral natural sem gás",
-        "price": "2.00",
-        "ingredients": ["Água mineral"],
-        "quantity": "500ml",
-        "image": "../../../assets/images/adaptive-icon.png"
+        "name": "Água de Frutas - Limão com Chia",
+        "description": "Refrescante água de frutas natural com limão e sementes de chia, perfeita para hidratar e revigorar.",
+        "price": "8.00",
+        "quantity": "1 unidade/500ml",
+        "ingredients": ["Água", "Limão", "Chia"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/522b8c93-d56e-4fd5-a626-72f926c15caf/202407011038_J8J5_i.jpg"
     },
     "4": {
-        "name": "Batata frita",
-        "description": "Batatas fritas crocantes",
-        "price": "10.00",
-        "ingredients": ["Batata", "Óleo vegetal", "Sal"],
-        "quantity": "porção 400g",
-        "image": "../../../assets/images/adaptive-icon.png"
+        "name": "Coca-Cola Lata",
+        "description": "Clássica Coca-Cola em lata, gelada e refrescante, perfeita para acompanhar qualquer refeição.",
+        "price": "8.00",
+        "quantity": "1 unidade/350ml",
+        "ingredients": ["Água gaseificada", "Açúcar", "Corante caramelo", "Ácido fosfórico", "Aromatizantes", "Cafeína"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210200237_btcjxya1zoh.jpg"
     },
     "5": {
-        "name": "Hamburguer",
-        "description": "Sanduíche de carne com acompanhamentos",
-        "price": "15.00",
-        "ingredients": ["Pão", "Carne", "Queijo", "Alface", "Tomate", "Molho especial"],
-        "quantity": "1 unidade",
-        "image": "../../../assets/images/adaptive-icon.png"
+        "name": "Ribs Mac and Cheese",
+        "description": "Deliciosa combinação de costela desfiada ao molho barbecue sobre um cremoso mac and cheese.",
+        "price": "69.90",
+        "quantity": "1 unidade/600g",
+        "ingredients": ["Costela suína desfiada", "Molho barbecue", "Macarrão", "Queijo cheddar", "Creme de leite"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/5221af98-5ad4-42e2-a767-23d1545b82d5/202005141339_zw0t_.jpeg"
     },
     "6": {
-        "name": "Cerveja",
-        "description": "Bebida alcoólica fermentada",
-        "price": "5.00",
-        "ingredients": ["Malte", "Lúpulo", "Água", "Levedura"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
+        "name": "New York Strip Steak",
+        "description": "Corte premium de carne bovina grelhado à perfeição, suculento e saboroso, acompanhado de manteiga temperada.",
+        "price": "119.90",
+        "quantity": "1 unidade/700g",
+        "ingredients": ["Carne bovina", "Sal grosso", "Manteiga temperada", "Pimenta do reino"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/2b157a73-7564-4733-94c1-8d0376e7bb39/202305151110_54U3_i.jpg"
     },
     "7": {
-        "name": "Refrigerante",
-        "description": "Bebida gaseificada e adoçada",
-        "price": "3.50",
-        "ingredients": ["Água carbonatada", "Açúcar", "Aromatizantes"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
+        "name": "Iced Tea Limão",
+        "description": "Chá gelado refrescante com sabor natural de limão, adoçado na medida certa.",
+        "price": "20.90",
+        "quantity": "1 unidade/1000ml",
+        "ingredients": ["Chá preto", "Limão", "Açúcar", "Gelo"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/185e2a09-94cb-49af-88cb-4b0de2df6dc5/202105211512_5H4S_.jpeg"
     },
     "8": {
-        "name": "Água",
-        "description": "Água mineral natural",
-        "price": "2.00",
-        "ingredients": ["Água mineral"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
+        "name": "Chopp Brahma Outback",
+        "description": "Chopp Brahma cremoso e gelado, servido no estilo Outback para uma experiência única.",
+        "price": "34.90",
+        "quantity": "1 unidade/600ml",
+        "ingredients": ["Chopp Brahma", "Malte", "Lúpulo", "Água"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/5221af98-5ad4-42e2-a767-23d1545b82d5/202105130950_PR7V_.jpeg"
     },
     "9": {
-        "name": "Batata frita",
-        "description": "Batatas fritas crocantes",
-        "price": "10.00",
-        "ingredients": ["Batata", "Óleo vegetal", "Sal"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
+        "name": "Pão de Alho",
+        "description": "Pão macio e crocante recheado com uma deliciosa pasta de alho e queijo derretido.",
+        "price": "21.00",
+        "quantity": "2 unidades/100g cada unidade",
+        "ingredients": ["Pão", "Manteiga", "Alho", "Queijo mussarela", "Orégano"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/13ebb9ba-01d3-4620-9e08-f26aa4c8d8a1/202210110108_A63J_i.jpg"
     },
     "10": {
-        "name": "Hamburguer",
-        "description": "Sanduíche de carne com acompanhamentos",
-        "price": "15.00",
-        "ingredients": ["Pão", "Carne", "Queijo", "Alface", "Tomate", "Molho especial"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
+        "name": "Cheeseburger Madero Super",
+        "description": "Hambúrguer artesanal grelhado, servido com queijo cheddar, alface, tomate e maionese especial no pão crocante.",
+        "price": "65.00",
+        "quantity": "1 unidade/400g",
+        "ingredients": ["Pão de hambúrguer", "Carne bovina", "Queijo cheddar", "Alface", "Tomate", "Maionese especial"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/13ebb9ba-01d3-4620-9e08-f26aa4c8d8a1/202303281050_OQX7_i.jpg"
     },
     "11": {
-        "name": "Cerveja",
-        "description": "Bebida alcoólica fermentada",
+        "name": "Água Mineral",
+        "description": "Água mineral pura e refrescante, ideal para acompanhar qualquer refeição.",
         "price": "5.00",
-        "ingredients": ["Malte", "Lúpulo", "Água", "Levedura"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
+        "quantity": "1 unidade/350ml",
+        "ingredients": ["Água mineral"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/13ebb9ba-01d3-4620-9e08-f26aa4c8d8a1/202205102301_9v1tff7awhq.jpeg"
     },
     "12": {
-        "name": "Refrigerante",
-        "description": "Bebida gaseificada e adoçada",
-        "price": "3.50",
-        "ingredients": ["Água carbonatada", "Açúcar", "Aromatizantes"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
+        "name": "Chá Gelado Madero - Pêssego Diet",
+        "description": "Refrescante chá gelado sabor pêssego, sem adição de açúcar.",
+        "price": "15.00",
+        "quantity": "1 unidade/500ml",
+        "ingredients": ["Chá preto", "Essência de pêssego", "Adoçante", "Gelo"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/13ebb9ba-01d3-4620-9e08-f26aa4c8d8a1/202303061438_M2BX_i.jpg"
     },
     "13": {
-        "name": "Água",
-        "description": "Água mineral natural",
-        "price": "2.00",
-        "ingredients": ["Água mineral"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
+        "name": "Du Piru #03 - 3 Salsichas",
+        "description": "Sanduíche recheado com três salsichas grelhadas, molho especial, queijo derretido e batata palha.",
+        "price": "28.99",
+        "quantity": "1 unidade/400g",
+        "ingredients": ["Pão de hot dog", "Salsichas", "Molho especial", "Queijo", "Batata palha"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/b3ae517a-ba7e-4ff8-ba06-92514313a1a6/202407081019_I5K4_i.jpg"
     },
     "14": {
-        "name": "Batata frita",
-        "description": "Batatas fritas crocantes",
-        "price": "10.00",
-        "ingredients": ["Batata", "Óleo vegetal", "Sal"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
+        "name": "Fritas Du Piru",
+        "description": "Porção de batatas fritas crocantes, servidas quentinhas e douradas.",
+        "price": "14.99",
+        "quantity": "1 porção/300ml",
+        "ingredients": ["Batatas", "Óleo vegetal", "Sal"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/8256ed05-3959-484b-aef3-0aa67fa21caa/202411251444_7K6Y_i.jpg"
     },
     "15": {
-        "name": "Hamburguer",
-        "description": "Sanduíche de carne com acompanhamentos",
+        "name": "Pureza 2L",
+        "description": "Refrigerante tradicional Pureza, com sabor refrescante e borbulhante.",
         "price": "15.00",
-        "ingredients": ["Pão", "Carne", "Queijo", "Alface", "Tomate", "Molho especial"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
+        "quantity": "1 unidade/2000ml",
+        "ingredients": ["Água gaseificada", "Açúcar", "Aromatizantes naturais"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/8256ed05-3959-484b-aef3-0aa67fa21caa/202412021427_0833_i.jpg"
     },
     "16": {
-        "name": "Cerveja",
-        "description": "Bebida alcoólica fermentada",
-        "price": "5.00",
-        "ingredients": ["Malte", "Lúpulo", "Água", "Levedura"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
+        "name": "Fanta Uva",
+        "description": "Refrigerante Fanta Uva, com sabor intenso de uva e borbulhas refrescantes.",
+        "price": "9.00",
+        "quantity": "1 unidade/350ml",
+        "ingredients": ["Água gaseificada", "Açúcar", "Aromatizante de uva", "Corante"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/8256ed05-3959-484b-aef3-0aa67fa21caa/202104261539_716S_.jpeg"
     },
     "17": {
-        "name": "Refrigerante",
-        "description": "Bebida gaseificada e adoçada",
-        "price": "3.50",
-        "ingredients": ["Água carbonatada", "Açúcar", "Aromatizantes"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
+        "name": "Shawarma de Frango",
+        "description": "Delicioso shawarma de frango temperado, envolto em pão sírio macio, acompanhado de molho especial e vegetais frescos.",
+        "price": "40.00",
+        "quantity": "1 unidade/500g",
+        "ingredients": ["Pão sírio", "Frango temperado", "Alface", "Tomate", "Molho especial"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/08df7ee5-cbf5-4e89-9210-f3eb23bc9135/201810021346_frang.jpg"
     },
     "18": {
-        "name": "Água",
-        "description": "Água mineral natural",
-        "price": "2.00",
-        "ingredients": ["Água mineral"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
+        "name": "Quibe Frito c/ Recheio de Carne",
+        "description": "Quibe crocante por fora e recheado com carne temperada e suculenta.",
+        "price": "15.00",
+        "quantity": "2 unidades/100g cada unidade",
+        "ingredients": ["Trigo para quibe", "Carne moída", "Hortelã", "Cebola", "Tempero sírio"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/08df7ee5-cbf5-4e89-9210-f3eb23bc9135/202007242018_aF4o_s.jpg"
     },
     "19": {
-        "name": "Batata frita",
-        "description": "Batatas fritas crocantes",
-        "price": "10.00",
-        "ingredients": ["Batata", "Óleo vegetal", "Sal"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
+        "name": "Cerveja 0,0% Álcool Heineken 330ml",
+        "description": "Cerveja Heineken sem álcool, mantendo o sabor puro e refrescante da versão original.",
+        "price": "14.00",
+        "quantity": "1 unidade/330ml",
+        "ingredients": ["Água", "Malte de cevada", "Lúpulo"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210200022_3etbaqlcl88.jpg"
     },
     "20": {
-        "name": "Hamburguer",
-        "description": "Sanduíche de carne com acompanhamentos",
-        "price": "15.00",
-        "ingredients": ["Pão", "Carne", "Queijo", "Alface", "Tomate", "Molho especial"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
-    },
-    "21": {
-        "name": "Cerveja",
-        "description": "Bebida alcoólica fermentada",
-        "price": "5.00",
-        "ingredients": ["Malte", "Lúpulo", "Água", "Levedura"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
-    },
-    "22": {
-        "name": "Refrigerante",
-        "description": "Bebida gaseificada e adoçada",
-        "price": "3.50",
-        "ingredients": ["Água carbonatada", "Açúcar", "Aromatizantes"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
-    },
-    "23": {
-        "name": "Água",
-        "description": "Água mineral natural",
-        "price": "2.00",
-        "ingredients": ["Água mineral"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
-    },
-    "24": {
-        "name": "Batata frita",
-        "description": "Batatas fritas crocantes",
-        "price": "10.00",
-        "ingredients": ["Batata", "Óleo vegetal", "Sal"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
-    },
-    "25": {
-        "name": "Hamburguer",
-        "description": "Sanduíche de carne com acompanhamentos",
-        "price": "15.00",
-        "ingredients": ["Pão", "Carne", "Queijo", "Alface", "Tomate", "Molho especial"],
-        "quantity": 1,
-        "image": "../../../assets/images/adaptive-icon.png"
+        "name": "Refrigerante Guaraná Antarctica 1,5 L",
+        "description": "Refrigerante Guaraná Antarctica, sabor autêntico e refrescante em embalagem de 1,5 L.",
+        "price": "13.90",
+        "quantity": "1 unidade/1500ml",
+        "ingredients": ["Água gaseificada", "Açúcar", "Extrato de guaraná", "Aromatizantes naturais"],
+        "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202303161119_54cps42qcot.jpg"
     }
 }
