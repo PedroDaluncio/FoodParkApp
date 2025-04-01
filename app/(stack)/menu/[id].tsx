@@ -15,7 +15,7 @@ export default function Menu() {
         renderItem={({ item }) => {
           return (
             <View style={styles.item}>
-              <Image source={require("../../../assets/images/loja1.png")} style={styles.image} />
+              <Image source={{uri: item.image}} style={styles.image} />
               <View style={styles.textContainer}>
                 <View>
                   <Text style={styles.foodName}>{item.name}</Text>

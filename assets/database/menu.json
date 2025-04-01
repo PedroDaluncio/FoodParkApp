@@ -4,68 +4,27 @@
         "foodsAndDrinks": [
             {
                 "id": 1,
-                "name": "Cerveja",
-                "price": "5.00",
-                "image": "../../../assets/images/adaptive-icon.png"
+                "name": "Burrito Pollo Bandito",
+                "price": "40.00",
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/522b8c93-d56e-4fd5-a626-72f926c15caf/202310291905_8UXT_i.jpg"
             },
             {
                 "id": 2,
-                "name": "Refrigerante",
-                "price": "3.50",
-                "image": "../../../assets/images/adaptive-icon.png"
+                "name": "Churros",
+                "price": "18.90",
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/522b8c93-d56e-4fd5-a626-72f926c15caf/202007161152_ALcm_d.jpg"
             },
             {
                 "id": 3,
-                "name": "Água",
-                "price": "2.00",
-                "image": "../../../assets/images/adaptive-icon.png"
+                "name": "Água de Frutas - Limão com Chia",
+                "price": "8.00",
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/522b8c93-d56e-4fd5-a626-72f926c15caf/202407011038_J8J5_i.jpg"
             },
             {
                 "id": 4,
-                "name": "Batata frita",
-                "price": "10.00",
-                "image": "../../../assets/images/adaptive-icon.png"
-            },
-            {
-                "id": 5,
-                "name": "Hamburguer",
-                "price": "15.00",
-                "image": "../../../assets/images/adaptive-icon.png"
-            }
-        ]
-    },
-    {
-        "storeId": 2,
-        "foodsAndDrinks": [
-            {
-                "id": 6,
-                "name": "Cerveja",
-                "price": "5.00",
-                "image": "../../../assets/images/adaptive-icon.png"
-            },
-            {
-                "id": 7,
-                "name": "Refrigerante",
-                "price": "3.50",
-                "image": "../../../assets/images/adaptive-icon.png"
-            },
-            {
-                "id": 8,
-                "name": "Água",
-                "price": "2.00",
-                "image": "../../../assets/images/adaptive-icon.png"
-            },
-            {
-                "id": 9,
-                "name": "Batata frita",
-                "price": "10.00",
-                "image": "../../../assets/images/adaptive-icon.png"
-            },
-            {
-                "id": 10,
-                "name": "Hamburguer",
-                "price": "15.00",
-                "image": "../../../assets/images/adaptive-icon.png"
+                "name": "Coca-Cola Lata",
+                "price": "8.00",
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210200237_btcjxya1zoh.jpg"
             }
         ]
     },
@@ -73,34 +32,57 @@
         "storeId": 3,
         "foodsAndDrinks": [
             {
+                "id": 5,
+                "name": "Ribs Mac and Cheese",
+                "price": "69.90",
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/5221af98-5ad4-42e2-a767-23d1545b82d5/202005141339_zw0t_.jpeg"
+            },
+            {
+                "id": 6,
+                "name": "New York Strip Steak",
+                "price": "119.90",
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/2b157a73-7564-4733-94c1-8d0376e7bb39/202305151110_54U3_i.jpg"
+            },
+            {
+                "id": 7,
+                "name": "Iced Tea Limão",
+                "price": "20.90",
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/185e2a09-94cb-49af-88cb-4b0de2df6dc5/202105211512_5H4S_.jpeg"
+            },
+            {
+                "id": 8,
+                "name": "Chopp Brahma Outback",
+                "price": "34.90",
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/5221af98-5ad4-42e2-a767-23d1545b82d5/202105130950_PR7V_.jpeg"
+            }
+        ]
+    },
+    {
+        "storeId": 2,
+        "foodsAndDrinks": [
+            {
+                "id": 9,
+                "name": "Pão de Alho",
+                "price": "21.00",
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/13ebb9ba-01d3-4620-9e08-f26aa4c8d8a1/202210110108_A63J_i.jpg"
+            },
+            {
+                "id": 10,
+                "name": "Cheeseburger Madero Super",
+                "price": "65.00",
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/13ebb9ba-01d3-4620-9e08-f26aa4c8d8a1/202303281050_OQX7_i.jpg"
+            },
+            {
                 "id": 11,
-                "name": "Cerveja",
+                "name": "Água Mineral",
                 "price": "5.00",
-                "image": "../../../assets/images/adaptive-icon.png"
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/13ebb9ba-01d3-4620-9e08-f26aa4c8d8a1/202205102301_9v1tff7awhq.jpeg"
             },
             {
                 "id": 12,
-                "name": "Refrigerante",
-                "price": "3.50",
-                "image": "../../../assets/images/adaptive-icon.png"
-            },
-            {
-                "id": 13,
-                "name": "Água",
-                "price": "2.00",
-                "image": "../../../assets/images/adaptive-icon.png"
-            },
-            {
-                "id": 14,
-                "name": "Batata frita",
-                "price": "10.00",
-                "image": "../../../assets/images/adaptive-icon.png"
-            },
-            {
-                "id": 15,
-                "name": "Hamburguer",
+                "name": "Chá Gelado Madero - Pêssego Diet",
                 "price": "15.00",
-                "image": "../../../assets/images/adaptive-icon.png"
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/13ebb9ba-01d3-4620-9e08-f26aa4c8d8a1/202303061438_M2BX_i.jpg"
             }
         ]
     },
@@ -108,34 +90,28 @@
         "storeId": 4,
         "foodsAndDrinks": [
             {
-                "id": 16,
-                "name": "Cerveja",
-                "price": "5.00",
-                "image": "../../../assets/images/adaptive-icon.png"
+                "id": 13,
+                "name": "Du Piru #03 - 3 Salsichas",
+                "price": "28.99",
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/b3ae517a-ba7e-4ff8-ba06-92514313a1a6/202407081019_I5K4_i.jpg"
             },
             {
-                "id": 17,
-                "name": "Refrigerante",
-                "price": "3.50",
-                "image": "../../../assets/images/adaptive-icon.png"
+                "id": 14,
+                "name": "Fritas Du Piru",
+                "price": "14.99",
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/8256ed05-3959-484b-aef3-0aa67fa21caa/202411251444_7K6Y_i.jpg"
             },
             {
-                "id": 18,
-                "name": "Água",
-                "price": "2.00",
-                "image": "../../../assets/images/adaptive-icon.png"
-            },
-            {
-                "id": 19,
-                "name": "Batata frita",
-                "price": "10.00",
-                "image": "../../../assets/images/adaptive-icon.png"
-            },
-            {
-                "id": 20,
-                "name": "Hamburguer",
+                "id": 15,
+                "name": "Pureza 2L",
                 "price": "15.00",
-                "image": "../../../assets/images/adaptive-icon.png"
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/8256ed05-3959-484b-aef3-0aa67fa21caa/202412021427_0833_i.jpg"
+            },
+            {
+                "id": 16,
+                "name": "Fanta Uva",
+                "price": "9.00",
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/8256ed05-3959-484b-aef3-0aa67fa21caa/202104261539_716S_.jpeg"
             }
         ]
     },
@@ -143,34 +119,28 @@
         "storeId": 5,
         "foodsAndDrinks": [
             {
-                "id": 21,
-                "name": "Cerveja",
-                "price": "5.00",
-                "image": "../../../assets/images/adaptive-icon.png"
+                "id": 17,
+                "name": "Shawarma de Frango",
+                "price": "40",
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/08df7ee5-cbf5-4e89-9210-f3eb23bc9135/201810021346_frang.jpg"
             },
             {
-                "id": 22,
-                "name": "Refrigerante",
-                "price": "3.50",
-                "image": "../../../assets/images/adaptive-icon.png"
-            },
-            {
-                "id": 23,
-                "name": "Água",
-                "price": "2.00",
-                "image": "../../../assets/images/adaptive-icon.png"
-            },
-            {
-                "id": 24,
-                "name": "Batata frita",
-                "price": "10.00",
-                "image": "../../../assets/images/adaptive-icon.png"
-            },
-            {
-                "id": 25,
-                "name": "Hamburguer",
+                "id": 18,
+                "name": "Quibe Frito c/ Recheio de Carne",
                 "price": "15.00",
-                "image": "../../../assets/images/adaptive-icon.png"
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/08df7ee5-cbf5-4e89-9210-f3eb23bc9135/202007242018_aF4o_s.jpg"
+            },
+            {
+                "id": 19,
+                "name": "Cerveja 0,0% Álcool Heineken 330ml",
+                "price": "14.00",
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210200022_3etbaqlcl88.jpg"
+            },
+            {
+                "id": 20,
+                "name": "Refrigerante Guaraná Antarctica 1,5 l",
+                "price": "13.90",
+                "image": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202303161119_54cps42qcot.jpg"
             }
         ]
     }
