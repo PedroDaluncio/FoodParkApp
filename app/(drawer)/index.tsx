@@ -7,14 +7,18 @@ import {
   View,
   TouchableOpacity,
   Linking,
+  useColorScheme,
 } from "react-native";
 import { FlashList } from "@shopify/flash-list";
 import database from "../../assets/database/stores.json";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Stores() {
+  const theme = useColorScheme();
+  const isDark = theme === "dark";
+
   return (
-    <SafeAreaView style={styles.safeArea}>
+    <SafeAreaView style={isDark ? styles.safeAreaDark : styles.safeArea}>
       {/* Header */}
       <View style={styles.header}>
         <Image
@@ -22,25 +26,39 @@ export default function Stores() {
           style={styles.logo}
           resizeMode="contain"
         />
-        <Text style={styles.title}>FoodParkApp</Text>
+        <Text style={isDark ? styles.titleDark : styles.title}>
+          FoodParkApp
+        </Text>
       </View>
-      <ScrollView contentContainerStyle={styles.container}>
+      <ScrollView
+        contentContainerStyle={isDark ? styles.containerDark : styles.container}
+      >
         {/* Informações Gerais */}
-        <View style={styles.infoSection}>
-          <Text style={styles.sectionTitle}>Informações Gerais:</Text>
+        <View style={isDark ? styles.infoSectionDark : styles.infoSection}>
+          <Text style={isDark ? styles.sectionTitleDark : styles.sectionTitle}>
+            Informações Gerais:
+          </Text>
           <View style={styles.sectionInfo}>
-            <Text style={styles.infoItem}>Pátio: </Text>
-            <Text style={styles.infoItem}>Lancho-Tech</Text>
+            <Text style={isDark ? styles.infoItemDark : styles.infoItem}>
+              Pátio:{" "}
+            </Text>
+            <Text style={isDark ? styles.infoItemDark : styles.infoItem}>
+              Lancho-Tech
+            </Text>
           </View>
           <View style={styles.sectionInfo}>
-            <Text style={styles.infoItem}>Telefone: </Text>
-            <Text style={styles.infoItem}>(99) 4002-8922</Text>
+            <Text style={isDark ? styles.infoItemDark : styles.infoItem}>
+              Telefone:{" "}
+            </Text>
+            <Text style={isDark ? styles.infoItemDark : styles.infoItem}>
+              (99) 4002-8922
+            </Text>
           </View>
 
           {/* Redes Sociais - tudo clicável */}
           <View style={styles.socialContainer}>
             <TouchableOpacity
-              style={styles.socialButton}
+              style={isDark ? styles.socialButtonDark : styles.socialButton}
               onPress={() =>
                 Linking.openURL("whatsapp://send?phone=+5511999999999")
               }
@@ -48,7 +66,7 @@ export default function Stores() {
               <Text style={styles.socialText}>WhatsApp</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={styles.socialButton}
+              style={isDark ? styles.socialButtonDark : styles.socialButton}
               onPress={() =>
                 Linking.openURL("https://instagram.com/foodparkapp")
               }
@@ -56,7 +74,7 @@ export default function Stores() {
               <Text style={styles.socialText}>Instagram</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={styles.socialButton}
+              style={isDark ? styles.socialButtonDark : styles.socialButton}
               onPress={() =>
                 Linking.openURL("https://facebook.com/foodparkapp")
               }
@@ -64,36 +82,46 @@ export default function Stores() {
               <Text style={styles.socialText}>Facebook</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={styles.socialButton}
+              style={isDark ? styles.socialButtonDark : styles.socialButton}
               onPress={() => Linking.openURL("https://www.foodparkapp.com")}
             >
               <Text style={styles.socialText}>Website</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={styles.socialButton}
+              style={isDark ? styles.socialButtonDark : styles.socialButton}
               onPress={() => Linking.openURL("mailto:contato@foodparkapp.com")}
             >
               <Text style={styles.socialText}>E-mail</Text>
             </TouchableOpacity>
           </View>
 
-          <Text style={styles.infoItem}>Endereço</Text>
-          <Text style={styles.infoItem}>Localização</Text>
+          <Text style={isDark ? styles.infoItemDark : styles.infoItem}>
+            Endereço
+          </Text>
+          <Text style={isDark ? styles.infoItemDark : styles.infoItem}>
+            Localização
+          </Text>
         </View>
 
         {/* Imagens das lojas */}
-        <View style={styles.photosSection}>
-          <Text style={styles.sectionTitle}>Fotos</Text>
+        <View style={isDark ? styles.photosSectionDark : styles.photosSection}>
+          <Text style={isDark ? styles.sectionTitleDark : styles.sectionTitle}>
+            Fotos
+          </Text>
           <FlashList
             data={database}
             renderItem={({ item }) => (
-              <View style={styles.photoItem}>
+              <View style={isDark ? styles.photoItemDark : styles.photoItem}>
                 <Image
-                  source={{uri: item.image}}
+                  source={{ uri: item.image }}
                   style={styles.photo}
                   resizeMode="cover"
                 />
-                <Text style={styles.photoTitle}>{item.title}</Text>
+                <Text
+                  style={isDark ? styles.photoTitleDark : styles.photoTitle}
+                >
+                  {item.title}
+                </Text>
               </View>
             )}
             keyExtractor={(item) => item.id.toString()}
@@ -113,7 +141,14 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#f2f2f2",
   },
+  safeAreaDark: {
+    flex: 1,
+    backgroundColor: "#121212",
+  },
   container: {
+    padding: 16,
+  },
+  containerDark: {
     padding: 16,
   },
   header: {
@@ -131,7 +166,16 @@ const styles = StyleSheet.create({
     color: "#333",
     textAlign: "center",
   },
+  titleDark: {
+    fontSize: 26,
+    fontWeight: "bold",
+    color: "#fff",
+    textAlign: "center",
+  },
   infoSection: {
+    marginBottom: 24,
+  },
+  infoSectionDark: {
     marginBottom: 24,
   },
   sectionTitle: {
@@ -139,6 +183,12 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     marginBottom: 12,
     color: "#333",
+  },
+  sectionTitleDark: {
+    fontSize: 22,
+    fontWeight: "600",
+    marginBottom: 12,
+    color: "#eee",
   },
   sectionInfo: {
     flexDirection: "row",
@@ -149,6 +199,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginVertical: 4,
     color: "#555",
+  },
+  infoItemDark: {
+    fontSize: 16,
+    marginVertical: 4,
+    color: "#bbb",
   },
   socialContainer: {
     flexDirection: "row",
@@ -163,6 +218,13 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     margin: 4,
   },
+  socialButtonDark: {
+    backgroundColor: "#0066cc",
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    borderRadius: 8,
+    margin: 4,
+  },
   socialText: {
     color: "#fff",
     fontSize: 16,
@@ -172,10 +234,18 @@ const styles = StyleSheet.create({
     marginBottom: 24,
     maxWidth: "100%",
   },
+  photosSectionDark: {
+    marginBottom: 24,
+    maxWidth: "100%",
+  },
   flashListContainer: {
     paddingHorizontal: 10,
   },
   photoItem: {
+    alignItems: "center",
+    marginRight: 12,
+  },
+  photoItemDark: {
     alignItems: "center",
     marginRight: 12,
   },
@@ -188,5 +258,10 @@ const styles = StyleSheet.create({
     marginTop: 8,
     fontSize: 14,
     color: "#333",
+  },
+  photoTitleDark: {
+    marginTop: 8,
+    fontSize: 14,
+    color: "#ddd",
   },
 });
