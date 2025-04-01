@@ -89,7 +89,7 @@ export default function Stores() {
             renderItem={({ item }) => (
               <View style={styles.photoItem}>
                 <Image
-                  source={require("../../assets/images/loja1.png")}
+                  source={{uri: item.image}}
                   style={styles.photo}
                   resizeMode="cover"
                 />
