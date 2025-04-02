@@ -1,41 +1,63 @@
-import React from "react";
-import { View, Text, StyleSheet, FlatList, useColorScheme } from "react-native";
+import React, { useCallback, useState } from "react";
+import { View, Text, StyleSheet, FlatList, useColorScheme, Image } from "react-native";
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useFocusEffect } from "expo-router";
+import { SafeAreaView } from "react-native-safe-area-context";
+import foods from '../../assets/database/foods.json'
 
-const orders = [
-  { id: "1", item: "Burger", status: "Delivered" },
-  { id: "2", item: "Pizza", status: "In Progress" },
-  { id: "3", item: "Sushi", status: "Cancelled" },
-];
 
 const OrdersScreen = () => {
   const colorScheme = useColorScheme();
   const isDark = colorScheme === "dark";
+  const [data, setData] = useState([])
 
-  const renderOrder = ({
-    item,
-  }: {
-    item: { id: string; item: string; status: string };
-  }) => (
-    <View style={isDark ? styles.orderItemDark : styles.orderItem}>
-      <Text style={isDark ? styles.itemTextDark : styles.itemText}>
-        {item.item}
-      </Text>
-      <Text style={isDark ? styles.statusTextDark : styles.statusText}>
-        {item.status}
-      </Text>
-    </View>
+  const getData = async () => {
+    const keys = await AsyncStorage.getAllKeys();
+    const result = await AsyncStorage.multiGet(keys);
+    return result
+  }
+
+  useFocusEffect(
+    useCallback(() => {
+      const fetchData = async () => {
+        const dataJson = await getData();
+        setData(dataJson);
+      };
+      fetchData();
+    }, [])
   );
 
   return (
-    <View style={isDark ? styles.containerDark : styles.container}>
-      <Text style={isDark ? styles.titleDark : styles.title}>Orders</Text>
-
+    <SafeAreaView>
+      <Text style={isDark ? styles.titleDark : styles.title}>Ordens</Text>
       <FlatList
-        data={orders}
-        keyExtractor={(item) => item.id}
-        renderItem={renderOrder}
+        data={data}
+        keyExtractor={(item) => item[0]}
+        renderItem={({ item }) => {
+          const dataString = item[1]
+          const itemParsed = JSON.parse(dataString)
+          if (itemParsed.quantity === 0){
+            return (<></>)
+          }
+          const imageUrl = foods[item[0]].image
+          const foodName = foods[item[0]].name
+          return (
+            <View style={isDark ? styles.orderItemDark : styles.orderItem}>
+              <Image source={{uri: imageUrl}} style={styles.image} />
+              <View>
+                <Text>{foodName}</Text>
+                <Text style={isDark ? styles.itemTextDark : styles.itemText}>
+                  {itemParsed.price}
+                </Text>
+                <Text style={isDark ? styles.statusTextDark : styles.statusText}>
+                  {itemParsed.quantity}
+                </Text>
+              </View>
+            </View>
+          )
+        }}
       />
-    </View>
+    </SafeAreaView>
   );
 };
 
@@ -44,6 +66,11 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 16,
     backgroundColor: "#fff",
+  },
+  image: {
+    width: '50%',
+    height: 150,
+    borderRadius: 12,
   },
   containerDark: {
     flex: 1,
