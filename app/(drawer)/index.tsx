@@ -8,21 +8,37 @@ import {
   TouchableOpacity,
   Linking,
   useColorScheme,
+  Platform,
 } from "react-native";
 import { FlashList } from "@shopify/flash-list";
 import database from "../../assets/database/stores.json";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { Ionicons } from "@expo/vector-icons";
 
 export default function Stores() {
   const theme = useColorScheme();
   const isDark = theme === "dark";
+
+  const openMaps = (latitude: number, longitude: number, label: string) => {
+    const scheme = Platform.select({
+      ios: "maps:0,0?q=",
+      android: "geo:0,0?q=",
+    });
+    const latLng = `${latitude},${longitude}`;
+    const url = Platform.select({
+      ios: `${scheme}${label}@${latLng}`,
+      android: `${scheme}${latLng}(${label})`,
+    });
+
+    Linking.openURL(url || "");
+  };
 
   return (
     <SafeAreaView style={isDark ? styles.safeAreaDark : styles.safeArea}>
       {/* Header */}
       <View style={styles.header}>
         <Image
-          source={require("../../assets/images/react-logo.png")} // Substitua pela imagem desejada
+          source={require("../../assets/images/react-logo.png")}
           style={styles.logo}
           resizeMode="contain"
         />
@@ -34,79 +50,125 @@ export default function Stores() {
         contentContainerStyle={isDark ? styles.containerDark : styles.container}
       >
         {/* Informações Gerais */}
-        <View style={isDark ? styles.infoSectionDark : styles.infoSection}>
+        <View style={isDark ? styles.cardDark : styles.card}>
           <Text style={isDark ? styles.sectionTitleDark : styles.sectionTitle}>
-            Informações Gerais:
+            Informações Gerais
           </Text>
-          <View style={styles.sectionInfo}>
-            <Text style={isDark ? styles.infoItemDark : styles.infoItem}>
-              Pátio:{" "}
-            </Text>
-            <Text style={isDark ? styles.infoItemDark : styles.infoItem}>
-              Lancho-Tech
-            </Text>
-          </View>
-          <View style={styles.sectionInfo}>
-            <Text style={isDark ? styles.infoItemDark : styles.infoItem}>
-              Telefone:{" "}
-            </Text>
-            <Text style={isDark ? styles.infoItemDark : styles.infoItem}>
-              (99) 4002-8922
-            </Text>
+
+          <View style={styles.infoRow}>
+            <Ionicons
+              name="business-outline"
+              size={20}
+              color={isDark ? "#bbb" : "#555"}
+            />
+            <View style={styles.infoContent}>
+              <Text style={isDark ? styles.infoLabelDark : styles.infoLabel}>
+                Pátio
+              </Text>
+              <Text style={isDark ? styles.infoValueDark : styles.infoValue}>
+                Lancho-Tech
+              </Text>
+            </View>
           </View>
 
-          {/* Redes Sociais - tudo clicável */}
+          <View style={styles.infoRow}>
+            <Ionicons
+              name="call-outline"
+              size={20}
+              color={isDark ? "#bbb" : "#555"}
+            />
+            <View style={styles.infoContent}>
+              <Text style={isDark ? styles.infoLabelDark : styles.infoLabel}>
+                Telefone
+              </Text>
+              <Text
+                style={isDark ? styles.infoValueDark : styles.infoValue}
+                onPress={() => Linking.openURL("tel:+5599400289223")}
+              >
+                (99) 4002-8922
+              </Text>
+            </View>
+          </View>
+
+          <View style={styles.infoRow}>
+            <Ionicons
+              name="location-outline"
+              size={20}
+              color={isDark ? "#bbb" : "#555"}
+            />
+            <View style={styles.infoContent}>
+              <Text style={isDark ? styles.infoLabelDark : styles.infoLabel}>
+                Endereço
+              </Text>
+              <Text style={isDark ? styles.infoValueDark : styles.infoValue}>
+                Av. Paulista, 1000 - Bela Vista, São Paulo - SP
+              </Text>
+            </View>
+          </View>
+
+          <TouchableOpacity
+            style={styles.mapButton}
+            onPress={() => openMaps(-23.5674, -46.6476, "Food Park App")}
+          >
+            <Ionicons name="map-outline" size={18} color="#fff" />
+            <Text style={styles.mapButtonText}>Abrir no Maps</Text>
+          </TouchableOpacity>
+        </View>
+
+        {/* Redes Sociais */}
+        <View style={isDark ? styles.cardDark : styles.card}>
+          <Text style={isDark ? styles.sectionTitleDark : styles.sectionTitle}>
+            Redes Sociais
+          </Text>
           <View style={styles.socialContainer}>
             <TouchableOpacity
-              style={isDark ? styles.socialButtonDark : styles.socialButton}
+              style={[styles.socialButton, { backgroundColor: "#25D366" }]}
               onPress={() =>
                 Linking.openURL("whatsapp://send?phone=+5511999999999")
               }
             >
+              <Ionicons name="logo-whatsapp" size={18} color="#fff" />
               <Text style={styles.socialText}>WhatsApp</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={isDark ? styles.socialButtonDark : styles.socialButton}
+              style={[styles.socialButton, { backgroundColor: "#E1306C" }]}
               onPress={() =>
                 Linking.openURL("https://instagram.com/foodparkapp")
               }
             >
+              <Ionicons name="logo-instagram" size={18} color="#fff" />
               <Text style={styles.socialText}>Instagram</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={isDark ? styles.socialButtonDark : styles.socialButton}
+              style={[styles.socialButton, { backgroundColor: "#1877F2" }]}
               onPress={() =>
                 Linking.openURL("https://facebook.com/foodparkapp")
               }
             >
+              <Ionicons name="logo-facebook" size={18} color="#fff" />
               <Text style={styles.socialText}>Facebook</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={isDark ? styles.socialButtonDark : styles.socialButton}
+              style={[styles.socialButton, { backgroundColor: "#0077B5" }]}
               onPress={() => Linking.openURL("https://www.foodparkapp.com")}
             >
+              <Ionicons name="globe-outline" size={18} color="#fff" />
               <Text style={styles.socialText}>Website</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={isDark ? styles.socialButtonDark : styles.socialButton}
+              style={[styles.socialButton, { backgroundColor: "#D44638" }]}
               onPress={() => Linking.openURL("mailto:contato@foodparkapp.com")}
             >
+              <Ionicons name="mail-outline" size={18} color="#fff" />
               <Text style={styles.socialText}>E-mail</Text>
             </TouchableOpacity>
           </View>
-
-          <Text style={isDark ? styles.infoItemDark : styles.infoItem}>
-            Endereço
-          </Text>
-          <Text style={isDark ? styles.infoItemDark : styles.infoItem}>
-            Localização
-          </Text>
         </View>
 
         {/* Imagens das lojas */}
-        <View style={isDark ? styles.photosSectionDark : styles.photosSection}>
+        <View style={isDark ? styles.cardDark : styles.card}>
           <Text style={isDark ? styles.sectionTitleDark : styles.sectionTitle}>
-            Fotos
+            Nossas Lojas
           </Text>
           <FlashList
             data={database}
@@ -127,7 +189,7 @@ export default function Stores() {
             keyExtractor={(item) => item.id.toString()}
             horizontal
             showsHorizontalScrollIndicator={false}
-            estimatedItemSize={100}
+            estimatedItemSize={150}
             contentContainerStyle={styles.flashListContainer}
           />
         </View>
@@ -139,7 +201,7 @@ export default function Stores() {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: "#f2f2f2",
+    backgroundColor: "#f5f5f5",
   },
   safeAreaDark: {
     flex: 1,
@@ -153,115 +215,165 @@ const styles = StyleSheet.create({
   },
   header: {
     alignItems: "center",
-    marginBottom: 24,
+    marginVertical: 16,
+    paddingHorizontal: 20,
   },
   logo: {
     width: 120,
     height: 60,
-    marginBottom: 16,
+    marginBottom: 12,
   },
   title: {
-    fontSize: 26,
+    fontSize: 28,
     fontWeight: "bold",
     color: "#333",
     textAlign: "center",
   },
   titleDark: {
-    fontSize: 26,
+    fontSize: 28,
     fontWeight: "bold",
     color: "#fff",
     textAlign: "center",
   },
-  infoSection: {
-    marginBottom: 24,
+  card: {
+    backgroundColor: "#fff",
+    borderRadius: 12,
+    padding: 16,
+    marginBottom: 20,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 2,
   },
-  infoSectionDark: {
-    marginBottom: 24,
+  cardDark: {
+    backgroundColor: "#1e1e1e",
+    borderRadius: 12,
+    padding: 16,
+    marginBottom: 20,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 2,
   },
   sectionTitle: {
     fontSize: 22,
     fontWeight: "600",
-    marginBottom: 12,
+    marginBottom: 16,
     color: "#333",
   },
   sectionTitleDark: {
     fontSize: 22,
     fontWeight: "600",
-    marginBottom: 12,
+    marginBottom: 16,
     color: "#eee",
   },
-  sectionInfo: {
+  infoRow: {
     flexDirection: "row",
-    justifyContent: "space-between",
-    marginBottom: 8,
+    alignItems: "flex-start",
+    marginBottom: 12,
   },
-  infoItem: {
-    fontSize: 16,
-    marginVertical: 4,
-    color: "#555",
+  infoContent: {
+    marginLeft: 12,
+    flex: 1,
   },
-  infoItemDark: {
+  infoLabel: {
+    fontSize: 14,
+    color: "#777",
+    marginBottom: 2,
+  },
+  infoLabelDark: {
+    fontSize: 14,
+    color: "#999",
+    marginBottom: 2,
+  },
+  infoValue: {
     fontSize: 16,
-    marginVertical: 4,
-    color: "#bbb",
+    color: "#333",
+    fontWeight: "500",
+  },
+  infoValueDark: {
+    fontSize: 16,
+    color: "#ddd",
+    fontWeight: "500",
+  },
+  mapButton: {
+    backgroundColor: "#4CAF50",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    paddingVertical: 12,
+    borderRadius: 8,
+    marginTop: 8,
+  },
+  mapButtonText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "500",
+    marginLeft: 8,
   },
   socialContainer: {
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "center",
-    marginVertical: 8,
   },
   socialButton: {
-    backgroundColor: "#1e90ff",
-    paddingVertical: 8,
-    paddingHorizontal: 16,
+    flexDirection: "row",
+    alignItems: "center",
+    paddingVertical: 10,
+    paddingHorizontal: 14,
     borderRadius: 8,
-    margin: 4,
-  },
-  socialButtonDark: {
-    backgroundColor: "#0066cc",
-    paddingVertical: 8,
-    paddingHorizontal: 16,
-    borderRadius: 8,
-    margin: 4,
+    margin: 5,
   },
   socialText: {
     color: "#fff",
     fontSize: 16,
     fontWeight: "500",
-  },
-  photosSection: {
-    marginBottom: 24,
-    maxWidth: "100%",
-  },
-  photosSectionDark: {
-    marginBottom: 24,
-    maxWidth: "100%",
+    marginLeft: 6,
   },
   flashListContainer: {
-    paddingHorizontal: 10,
+    paddingVertical: 10,
   },
   photoItem: {
-    alignItems: "center",
-    marginRight: 12,
+    backgroundColor: "#fff",
+    borderRadius: 10,
+    marginRight: 14,
+    padding: 8,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+    elevation: 1,
   },
   photoItemDark: {
-    alignItems: "center",
-    marginRight: 12,
+    backgroundColor: "#2a2a2a",
+    borderRadius: 10,
+    marginRight: 14,
+    padding: 8,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.2,
+    shadowRadius: 2,
+    elevation: 1,
   },
   photo: {
-    width: 150,
-    height: 150,
+    width: 160,
+    height: 160,
     borderRadius: 8,
   },
   photoTitle: {
     marginTop: 8,
-    fontSize: 14,
+    fontSize: 15,
+    fontWeight: "500",
     color: "#333",
+    textAlign: "center",
   },
   photoTitleDark: {
     marginTop: 8,
-    fontSize: 14,
+    fontSize: 15,
+    fontWeight: "500",
     color: "#ddd",
+    textAlign: "center",
   },
 });
