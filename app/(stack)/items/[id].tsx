@@ -35,6 +35,7 @@ export default function Foods() {
       } else {
         const dataString = await AsyncStorage.getItem(id.toString())
         const data = dataString ? JSON.parse(dataString) : { price: 0.0, quantity: 0 }
+
         data.price = !isRemoveOperation ? (
           parseFloat(data.price) + parseFloat(food.price)
         ) : (
