@@ -38,7 +38,7 @@ export default function Stores() {
       {/* Header */}
       <View style={styles.header}>
         <Image
-          source={require("../../assets/images/react-logo.png")}
+          source={require("../../assets/images/lanchotech.png")}
           style={styles.logo}
           resizeMode="contain"
         />
