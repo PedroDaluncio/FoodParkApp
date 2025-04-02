@@ -9,6 +9,7 @@ export default function DrawerLayout() {
         name="schedule"
         options={{ title: "Calendário de Eventos" }}
       />
+      <Drawer.Screen name="orders" options={{ title: "Meus Pedidos" }} />
     </Drawer>
   );
 }
