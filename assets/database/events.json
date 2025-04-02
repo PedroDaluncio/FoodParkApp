@@ -1,0 +1,415 @@
+{
+  "2025-03-31": [
+    {
+      "time": "10:00",
+      "event": "Reunião de equipe",
+      "videoUrl": "https://youtu.be/3IE2W64k0Ys"
+    },
+    {
+      "time": "14:00",
+      "event": "Apresentação de projeto",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    }
+  ],
+  "2025-04-01": [
+    {
+      "time": "09:00",
+      "event": "Workshop de Culinária Italiana",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    },
+    {
+      "time": "13:00",
+      "event": "Degustação de Vinhos e Queijos",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    },
+    {
+      "time": "18:30",
+      "event": "Abertura do Festival Gastronômico",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    }
+  ],
+  "2025-04-02": [
+    {
+      "time": "10:30",
+      "event": "Aula de Sushi e Sashimi",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    },
+    {
+      "time": "16:00",
+      "event": "Concurso de Chefs Amadores",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    }
+  ],
+  "2025-04-03": [
+    {
+      "time": "12:00",
+      "event": "Food Truck Festival",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    },
+    {
+      "time": "19:00",
+      "event": "Jantar Temático: Comida Mexicana",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    },
+    {
+      "time": "21:00",
+      "event": "Show de Música ao Vivo",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    }
+  ],
+  "2025-04-04": [
+    {
+      "time": "14:30",
+      "event": "Aula de Doces Franceses",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    },
+    {
+      "time": "17:00",
+      "event": "Degustação de Cervejas Artesanais",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    },
+    {
+      "time": "20:00",
+      "event": "Noite de Hambúrgueres Gourmet",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    }
+  ],
+  "2025-04-05": [
+    {
+      "time": "09:30",
+      "event": "Feira Orgânica Local",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    },
+    {
+      "time": "13:30",
+      "event": "Workshop de Café Especial",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    },
+    {
+      "time": "16:00",
+      "event": "Concurso de Sorvetes Artesanais",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    },
+    {
+      "time": "19:00",
+      "event": "Jantar com Chef Estrelado",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    }
+  ],
+  "2025-04-06": [
+    {
+      "time": "11:00",
+      "event": "Brunch Especial de Domingo",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    },
+    {
+      "time": "15:00",
+      "event": "Cooking Show: Técnicas de Churrasco",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    }
+  ],
+  "2025-04-07": [
+    {
+      "time": "13:00",
+      "event": "Almoço Executivo Temático",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    }
+  ],
+  "2025-04-08": [
+    {
+      "time": "10:00",
+      "event": "Workshop de Pães Artesanais",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    },
+    {
+      "time": "18:00",
+      "event": "Happy Hour Gastronômico",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    }
+  ],
+  "2025-04-11": [
+    {
+      "time": "15:00",
+      "event": "Festival de Vinhos",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    },
+    {
+      "time": "19:30",
+      "event": "Jantar Às Cegas",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    },
+    {
+      "time": "21:00",
+      "event": "Show de Comédia e Gastronomia",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    }
+  ],
+  "2025-04-12": [
+    {
+      "time": "10:00",
+      "event": "Mercado Gourmet de Fim de Semana",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    },
+    {
+      "time": "13:00",
+      "event": "Aula de Culinária Vegana",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    },
+    {
+      "time": "17:00",
+      "event": "Festival de Comida de Rua",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    },
+    {
+      "time": "20:00",
+      "event": "Cozinha ao Vivo com Chef Famoso",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    }
+  ],
+  "2025-04-13": [
+    {
+      "time": "12:00",
+      "event": "Feijoada Tradicional de Domingo",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    },
+    {
+      "time": "16:00",
+      "event": "Concurso de Sobremesas",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    }
+  ],
+  "2025-04-14": [
+    {
+      "time": "09:30",
+      "event": "Curso de Fotografia Gastronômica",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    }
+  ],
+  "2025-04-15": [
+    {
+      "time": "12:30",
+      "event": "Almoço Executivo Internacional",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    },
+    {
+      "time": "18:00",
+      "event": "Degustação de Chocolates Finos",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    }
+  ],
+  "2025-04-16": [
+    {
+      "time": "14:00",
+      "event": "Aula de Drinks e Coquetéis",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    },
+    {
+      "time": "19:00",
+      "event": "Noite de Tapas e Petiscos",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    },
+    {
+      "time": "21:30",
+      "event": "Degustação de Destilados Premium",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    }
+  ],
+  "2025-04-17": [
+    {
+      "time": "10:00",
+      "event": "Workshop de Pratos Saudáveis",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    },
+    {
+      "time": "17:00",
+      "event": "Aula de Massas Italianas",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    }
+  ],
+  "2025-04-18": [
+    {
+      "time": "12:00",
+      "event": "Festival de Comida Japonesa",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    },
+    {
+      "time": "15:30",
+      "event": "Concurso de Pizza Artesanal",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    },
+    {
+      "time": "20:00",
+      "event": "Jantar Harmonizado com Vinhos",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    }
+  ],
+  "2025-04-19": [
+    {
+      "time": "09:00",
+      "event": "Feira de Produtos Orgânicos",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    },
+    {
+      "time": "14:00",
+      "event": "Oficina de Pães de Fermentação Natural",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    },
+    {
+      "time": "18:00",
+      "event": "Festival de Comida Mineira",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    },
+    {
+      "time": "21:00",
+      "event": "Festa Gastronômica com DJ",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    }
+  ],
+  "2025-04-20": [
+    {
+      "time": "11:00",
+      "event": "Brunch Especial de Páscoa",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    },
+    {
+      "time": "15:00",
+      "event": "Caça aos Ovos de Chocolate",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    }
+  ],
+  "2025-04-21": [
+    {
+      "time": "13:00",
+      "event": "Almoço Especial de Feriado",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    }
+  ],
+  "2025-04-22": [
+    {
+      "time": "09:30",
+      "event": "Café da Manhã Gourmet",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    },
+    {
+      "time": "16:00",
+      "event": "Oficina de Biscoitos Decorados",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    }
+  ],
+  "2025-04-23": [
+    {
+      "time": "12:00",
+      "event": "Festival de Hambúrgueres Artesanais",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    },
+    {
+      "time": "18:30",
+      "event": "Workshop de Coquetelaria",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    },
+    {
+      "time": "20:30",
+      "event": "Jantar Dançante",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    }
+  ],
+  "2025-04-24": [
+    {
+      "time": "10:00",
+      "event": "Aula de Pratos Orientais",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    },
+    {
+      "time": "15:00",
+      "event": "Festival de Sorvetes e Gelatos",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    }
+  ],
+  "2025-04-25": [
+    {
+      "time": "14:00",
+      "event": "Workshop de Culinária Regional",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    },
+    {
+      "time": "19:00",
+      "event": "Noite de Pizzas Gourmet",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    },
+    {
+      "time": "22:00",
+      "event": "Bar de Drinks Especiais",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    }
+  ],
+  "2025-04-26": [
+    {
+      "time": "09:00",
+      "event": "Mercado de Produtores Locais",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    },
+    {
+      "time": "13:00",
+      "event": "Competição MasterChef Amador",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    },
+    {
+      "time": "19:00",
+      "event": "Jantar com Música ao Vivo",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    },
+    {
+      "time": "22:00",
+      "event": "After Party Gastronômica",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    }
+  ],
+  "2025-04-27": [
+    {
+      "time": "11:30",
+      "event": "Festival de Comida Vegana",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    },
+    {
+      "time": "16:00",
+      "event": "Tarde de Queijos e Fondue",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    }
+  ],
+  "2025-04-28": [
+    {
+      "time": "10:00",
+      "event": "Workshop de Panificação",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    }
+  ],
+  "2025-04-29": [
+    {
+      "time": "12:00",
+      "event": "Almoço Típico Nordestino",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    },
+    {
+      "time": "18:00",
+      "event": "Degustação de Azeites Premium",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    }
+  ],
+  "2025-04-30": [
+    {
+      "time": "11:00",
+      "event": "Festival de Encerramento do Mês",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    },
+    {
+      "time": "15:00",
+      "event": "Premiação do Chef do Mês",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    },
+    {
+      "time": "19:30",
+      "event": "Banquete de Gala",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    }
+  ]
+}
