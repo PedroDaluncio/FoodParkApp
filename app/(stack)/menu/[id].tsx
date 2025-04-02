@@ -10,7 +10,7 @@ import {
 import database from "../../../assets/database/menu.json";
 import stores from "../../../assets/database/stores.json";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Link, useLocalSearchParams, useRouter } from "expo-router";
+import { useLocalSearchParams, useRouter } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from "@expo/vector-icons";
 
