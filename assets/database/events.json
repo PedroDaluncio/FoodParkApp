@@ -28,18 +28,6 @@
       "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
     }
   ],
-  "2025-04-02": [
-    {
-      "time": "10:30",
-      "event": "Aula de Sushi e Sashimi",
-      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
-    },
-    {
-      "time": "16:00",
-      "event": "Concurso de Chefs Amadores",
-      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
-    }
-  ],
   "2025-04-03": [
     {
       "time": "12:00",
@@ -106,13 +94,6 @@
       "time": "15:00",
       "event": "Cooking Show: Técnicas de Churrasco",
       "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
-    }
-  ],
-  "2025-04-07": [
-    {
-      "time": "13:00",
-      "event": "Almoço Executivo Temático",
-      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
     }
   ],
   "2025-04-08": [
